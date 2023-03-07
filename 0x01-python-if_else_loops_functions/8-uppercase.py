@@ -9,4 +9,4 @@ def uppercase(str):
             print("{char}".format(char=chr(ord(a) - diff)), end="")
         index += 1
         if (index == length):
-            print("")
+            print("{space}".format(space=""))
