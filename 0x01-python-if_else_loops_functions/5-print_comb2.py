@@ -5,6 +5,6 @@ for a in range(0, 100):
     else:
         number = a
     if a != 99:
-        print(number, end=", ")
+        print("{number}".format(number=number), end=", ")
     else:
-        print(number)
+        print("{number}".format(number=number))
