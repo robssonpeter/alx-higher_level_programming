@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 def weight_average(my_list=[]):
+    if len(my_list) == 0:
+        return 0
     score_x_weight = list(map(lambda tup: tup[0] * tup[1], my_list))
     weight = list(map(lambda tup: tup[1], my_list))
 
