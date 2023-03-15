@@ -2,6 +2,8 @@
 
 def search_replace(my_list, search, replace):
     new_list = []
-    checker = lambda x: x if x != search else replace
+
+    def checker(number):
+        return number if number != search else replace
 
     return list(map(checker, my_list))
