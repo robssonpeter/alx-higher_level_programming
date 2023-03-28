@@ -5,4 +5,3 @@
 class Square:
     """The class square definition"""
     pass
-
