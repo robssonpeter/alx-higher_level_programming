@@ -1,0 +1,5 @@
+>>> size = 10
+>>> print(size > 0)
+True
+>>> print(type(size))
+<class 'int'>

@@ -1,0 +1,3 @@
+>>> text = "Peter mgembe"
+>>> print(type(text))
+<class 'str'>

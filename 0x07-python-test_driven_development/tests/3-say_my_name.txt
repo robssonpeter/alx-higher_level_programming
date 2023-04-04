@@ -1,0 +1,8 @@
+>>> first_name = "Peter"
+>>> last_name = "Mgembe"
+>>> type(first_name)
+<class 'str'>
+>>> type(last_name)
+<class 'str'>
+>>> len(first_name)
+5
