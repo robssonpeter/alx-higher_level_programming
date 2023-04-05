@@ -51,4 +51,3 @@ class Rectangle:
     def __str__(self):
         """ the str function """
         return "\n".join("#"*self.__width for h in range(self.__height))
-
