@@ -1,0 +1,5 @@
+test if the program inherits list
+>>> MyList = __import__("1-my_list").MyList
+>>> a_list = MyList()
+>>> isinstance(a_list, list)
+True
