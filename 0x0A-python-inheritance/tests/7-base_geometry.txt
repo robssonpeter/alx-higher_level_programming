@@ -1,0 +1,13 @@
+test if area returns an exception
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+>>> bg.area()
+area() is not implemented
+>>> bg.integer_validator("peter", 'deo')
+Traceback (most recent call last):
+     ...
+[TypeError] peter must be an integer
+>>> bg.integer_validator("peter", -5)
+Traceback (most recent call last):
+     ...
+[ValueError] peter must be greater than 0
