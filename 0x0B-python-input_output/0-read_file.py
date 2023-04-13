@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """ the function to read a text file in utf8 """
 
 
