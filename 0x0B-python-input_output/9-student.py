@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ instantiate teh student class """
-import json
 
 
 class Student:
@@ -12,5 +11,5 @@ class Student:
 
     def to_json(self):
         """ the function that converts the class instanc to json """
-        return json.dumps(self.__dict__)
-
+        class_to_json = __import__("8-class_to_json").class_to_json
+        return class_to_json(self)
