@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""The rectangle class"""
+"""
+The rectangle class
+"""
 
 
 class Rectangle:
-    """the rectangel class inside"""
-
+    """Empty representaiton of the class"""
     pass
