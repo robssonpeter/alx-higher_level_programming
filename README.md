@@ -1,1 +1,1 @@
-# alx-higher_level_programming
+Myslq More quieries assignment
