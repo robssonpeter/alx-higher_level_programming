@@ -1,4 +1,4 @@
 -- Average temp
 -- Based on cities
 SELECT state, MAX(value) AS max_temp temperatures
-GROUP BY state;
+GROUP BY state ORDER BY state ASC;
