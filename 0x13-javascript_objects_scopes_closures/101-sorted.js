@@ -1,13 +1,13 @@
 #!/usr/bin/node
-from '101-data' import dict;
-const new_dict = {};
+const dict = require('./101-data').dict;
+const newDict = {};
 const keys = Object.keys(dict);
 const values = Object.values(dict);
 for (let x = 0; x < keys.length; x++) {
-  if (!new_dict[values[x]]) {
-    new_dict[values[x]] = [keys[x]];
+  if (!newDict[values[x]]) {
+    newDict[values[x]] = [keys[x]];
   } else {
-    new_dict[values[x]].push(keys[x]);
+    newDict[values[x]].push(keys[x]);
   }
 }
-console.log(new_dict);
+console.log(newDict);
