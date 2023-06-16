@@ -7,13 +7,11 @@ if __name__ == "__main__":
 
     stmt = """
             SELECT cities.id, cities.name, states.name
-            INNER JOIN states
-            ON states.id = cities.state_id
-            """
+            FROM cities JOIN states ON states.id = cities.state_id"""
     arg = sys.argv
     connection = MySQLdb.connect('localhost', arg[1], arg[2], arg[3])
     cursor = connection.cursor()
-    cursor.execute()
+    cursor.execute(stmt)
     results = cursor.fetchall()
     for result in results:
         print(result)
