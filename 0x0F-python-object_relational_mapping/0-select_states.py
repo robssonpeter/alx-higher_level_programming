@@ -5,7 +5,8 @@ if __name__ == "__main__":
     import MySQLdb
     import sys
 
-    connection = MySQLdb.connect(host="locahost", user=sys.argv[1], password=sys.argv[2], database=sys.argv[3])
+    args = sys.argv
+    connection = MySQLdb.connect("localhost", args[1], args[2], args[3])
     cursor = connection.cursor()
     cursor.execute("SELECT id, name FROM states ORDER BY id ASC")
     results = cursor.fetchall()
