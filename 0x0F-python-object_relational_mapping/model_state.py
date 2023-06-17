@@ -7,6 +7,7 @@ Base = declarative_base()
 
 """ Class Definition for State"""
 
+
 class State(Base):
     """ Representing a state """
 
