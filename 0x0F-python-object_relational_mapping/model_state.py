@@ -14,3 +14,6 @@ class State(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
+
+    def __repr__(self):
+        return f"<State(id={self.id}, name='{self.name}')>"
