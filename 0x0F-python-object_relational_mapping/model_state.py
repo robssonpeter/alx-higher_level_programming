@@ -1,15 +1,18 @@
 #!/usr/bin/python3
-import sqlalchemy
+""" Class Definition for State"""
+
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
 
-""" Class Definition for State"""
-
 
 class State(Base):
-    """ Representing a state """
+    """ Representing a state 
+    __tablename__ (str): The table to be used
+    id (sqlalchemy.Integer): the id the auto increments
+    name (sqlalchemy.String): name of the state
+    """
 
     __tablename__ = 'states'
 
