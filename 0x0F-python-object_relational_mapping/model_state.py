@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Class Definition for State"""
 
-from sqlalchemy.orm import declarative_base
+from sqlalchemy.orm import declarative_base, relationship
 from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
@@ -18,6 +18,7 @@ class State(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
+    city = relationship('City', backref='state')
 
     def __repr__(self):
         return f"<State(id={self.id}, name='{self.name}')>"
