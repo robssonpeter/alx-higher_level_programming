@@ -9,7 +9,8 @@ import sys
 
 if __name__ == "__main__":
     args = sys.argv
-    engine = create_engine(f"mysql://{args[1]}:{args[2]}@localhost:3306/{args[3]}")
+    engine_text = f"mysql://{args[1]}:{args[2]}@localhost:3306/{args[3]}"
+    engine = create_engine(engine_text)
     Base.metadata.bind = engine
     Session = sessionmaker(bind=engine)
     session = Session()
