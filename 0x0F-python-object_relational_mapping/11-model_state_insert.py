@@ -20,4 +20,3 @@ if __name__ == "__main__":
     saved = session.commit()
 
     print(model.id)
-
