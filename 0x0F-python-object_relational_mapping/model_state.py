@@ -8,7 +8,7 @@ Base = declarative_base()
 
 
 class State(Base):
-    """ Representing a state 
+    """ Representing a state
     __tablename__ (str): The table to be used
     id (sqlalchemy.Integer): the id the auto increments
     name (sqlalchemy.String): name of the state
