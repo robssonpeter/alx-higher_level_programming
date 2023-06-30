@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ The script to fetch from alx status page"""
+
+
 from urllib import request
 
 with request.urlopen("https://alx-intranet.hbtn.io/status") as response:
