@@ -7,7 +7,7 @@ import urllib.parse
 from sys import argv
 
 if (len(argv) > 2):
-    obj = {"email":argv[2]}
+    obj = {"email": argv[2]}
     data = urllib.parse.urlencode(obj).encode()
     request = Request(argv[1], data, method="POST")
     with request as response:
