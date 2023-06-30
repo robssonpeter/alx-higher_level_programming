@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # script to make a get request
-curl -X GET $1
+curl -sX GET $1
