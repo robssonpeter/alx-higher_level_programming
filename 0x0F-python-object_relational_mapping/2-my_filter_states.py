@@ -8,7 +8,9 @@ if __name__ == "__main__":
     args = sys.argv
     connection = MySQLdb.connect("localhost", args[1], args[2], args[3])
     cursor = connection.cursor()
-    stmnt = "SELECT id, name FROM states WHERE name = '{name}' ORDER BY id ASC"
+    stmnt = """SELECT `id`, `name` FROM states
+                WHERE BINARY `name` = '{name}'
+                ORDER BY `id` ASC"""
     cursor.execute(stmnt.format(name=args[4]))
     results = cursor.fetchall()
     for result in results:
