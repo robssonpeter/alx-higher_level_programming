@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-"""script to make  a request """
+# python script to make a request using requests package
 
 
-import urllib.requests
+import requests
 
 url = "https://alx-intranet.hbtn.io/status"
-with urllib.request.urlopen(url) as response:
-    resp = response.read().decode('utf-8')
-
-print("Body response:$")
-print(f"\t- type: {type(resp)}$")
-print(f"\t- type: {resp}$")
+r = requests.get(url)
+print(f"\t - type: {type(r.text)}")
+print(f"\t - content: {r.text}")
