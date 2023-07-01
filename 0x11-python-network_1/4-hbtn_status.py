@@ -2,7 +2,7 @@
 # python script to make a request using requests package
 
 
-requests = __import__("requests")
+import requests
 
 url = "https://alx-intranet.hbtn.io/status"
 with requests.get(url) as r:
