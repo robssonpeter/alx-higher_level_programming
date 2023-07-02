@@ -9,5 +9,5 @@ if __name__ == "__main__":
     with requests.get(sys.argv[1]) as resp:
         try:
             print(resp.headers['X-Request-Id'])
-        except:
+        except KeyError:
             pass
