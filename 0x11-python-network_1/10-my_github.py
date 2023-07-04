@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Script for querying credentials on github """
 
+
 import requests
 import sys
 
