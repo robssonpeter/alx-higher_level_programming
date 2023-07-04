@@ -14,4 +14,7 @@ if __name__ == "__main__":
         "X-GitHub-Api-Version": "2022-11-28"
     }
     with requests.get(url, auth=(user, paswd)) as resp:
-        print(resp.json()['id'])
+        if resp.status_code == 200:
+            print(resp.json()['id'])
+        else:
+            print(None)
