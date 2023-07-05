@@ -1,3 +1,3 @@
 #!/bin/bash
 # script to make a get request
-curl -sX GET $1
+curl -sL GET "$1"
