@@ -6,6 +6,7 @@ if __name__ == "__main__":
     from sqlalchemy import create_engine, Integer, String
     from sqlalchemy.orm import sessionmaker, declarative_base
     from model_state import Base, State
+    from model_city import City
 
     args = sys.argv
     command = f"mysql://{args[1]}:{args[2]}@localhost:3306/{args[3]}"
