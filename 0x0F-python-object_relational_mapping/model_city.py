@@ -9,15 +9,14 @@ Base = declarative_base()
 
 
 class City(Base):
-    """ Representing a city 
+    """ Representing a city
     __tablename__ (str): The table to be used
     id (sqlalchemy.Integer): the id the auto increments
     name (sqlalchemy.String): name of the city
-    state_id (integer): id of the state 
+    state_id (integer): id of the state
     """
 
     __tablename__ = 'cities'
-
 
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
